@@ -1,0 +1,25 @@
+{
+    "name" : "Search Tags by Word and Copy them",
+    "description" : "説明",
+    "version" : "0.1",
+    "permissions" : [
+        "contextMenus",
+        "tabs",
+        "activeTab"
+    ],
+    "background" : {
+        "scripts" : ["main.js"],
+        "persistent" : false
+    },
+    "content_scripts" : [
+        {
+            "matches" : ["<all_urls>"],
+            "js" : ["contentscript.js"],
+            "run_at" : "document_end"
+        }
+    ],
+    "icons" : {
+        "128" : "128.png"
+    },
+    "manifest_version" : 2
+}
