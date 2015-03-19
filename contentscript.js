@@ -4,5 +4,3 @@ chrome.extension.onMessage.addListener ( function(
     alert("recieved.");
     sendResponse({});
 });
-
-alert(5678);
